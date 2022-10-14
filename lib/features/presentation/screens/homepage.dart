@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:reciply/features/presentation/constants/colors.dart';
-import 'package:reciply/features/presentation/widgets/buttonWidget.dart';
 import 'package:reciply/features/presentation/widgets/listview.dart';
 import 'package:reciply/features/presentation/widgets/material_button.dart';
 import 'package:reciply/features/presentation/widgets/nav_bar.dart';
@@ -30,7 +29,7 @@ class _HomescreenState extends State<Homescreen> {
         onPressed: () {},
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: const bottomNavBar(),
+      bottomNavigationBar: const BottomNavBar(),
       backgroundColor: kWhitishGrey,
       body: SingleChildScrollView(
         child: Container(
@@ -87,7 +86,7 @@ class _HomescreenState extends State<Homescreen> {
               const SizedBox(
                 height: 12,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 600,
                 child: EditorsChoiceListView(),
               ),
@@ -98,7 +97,3 @@ class _HomescreenState extends State<Homescreen> {
     );
   }
 }
-
-
-
-

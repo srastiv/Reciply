@@ -1,10 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:reciply/features/presentation/constants/colors.dart';
 import 'package:reciply/features/presentation/widgets/buttonWidget.dart';
 
-class bottomNavBar extends StatelessWidget {
-  const bottomNavBar({
+class BottomNavBar extends StatelessWidget {
+  const BottomNavBar({
     Key? key,
   }) : super(key: key);
 

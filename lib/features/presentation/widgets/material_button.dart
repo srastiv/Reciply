@@ -1,7 +1,7 @@
 // import 'package:flutter/material.dart';
 
  import 'package:flutter/material.dart';
-import 'package:reciply/features/presentation/constants/colors.dart';
+import 'package:reciply/features/presentation/constants/texts.dart';
 
 Row popularEditorsRow(String text) {
     return Row(
@@ -9,12 +9,11 @@ Row popularEditorsRow(String text) {
       children: [
         Text(
           text,
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          style: kPopularReceipeEditorTextStyle,
         ),
         const Text(
           "View All",
-          style: TextStyle(
-              fontWeight: FontWeight.bold, fontSize: 15, color: kCommonGreen),
+          style: kViewAllTextStyle,
         ),
       ],
     );
